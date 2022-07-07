@@ -168,20 +168,20 @@
              document.getElementById("noidung").innerHTML = "Trời Tối";
              
          }
-         if(snap.val()>20 && snap.val()<200 ){
+         if(snap.val()>20 && snap.val()<500 ){
           
           document.images['thoitiet2'].src ='./khongnang.png' ;
           document.getElementById("noidung").innerHTML = "Thời tiết: Không có nắng";
          
     
       }     
-      if(snap.val()>200 && snap.val()<650){
+      if(snap.val()>500 && snap.val()<730){
           
           document.images['thoitiet2'].src ='./nangit.png' ;
          document.getElementById("noidung").innerHTML = "Thời tiết: Ít nắng";
     
       }   
-      if(snap.val()>650){
+      if(snap.val()>730){
           
           document.images['thoitiet2'].src ='./nang.png' ;
           document.getElementById("noidung").innerHTML = "Thời tiết: Nắng tốt";
