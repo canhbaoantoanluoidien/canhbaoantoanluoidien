@@ -31,7 +31,7 @@
       <div class="card">
         <img
          name="anh1" 
-          src="../binhthuongmoi.jpg"
+          src="./binhthuongmoi.jpg"
           alt=""
           class="card-image"
         />
@@ -39,7 +39,7 @@
           <div class="card-top">
             <h2 class="card-title">Trạm giám sát số: 01</h2>
             <center>
-            <img name="thoitiet2" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <img name="thoitiet2" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
             <p id="noidung" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
             </center>
             <div  style="overflow:hidden;text-align: center">
@@ -71,7 +71,7 @@
       </div>
       <div class="card">
         <img
-          src="../binhthuongmoi.jpg"
+          src="./binhthuongmoi.jpg"
           alt=""
           class="card-image"
         />
@@ -79,7 +79,7 @@
           <div class="card-top">
             <h2 class="card-title">Trạm giám sát số: 02</h2>
             <center>
-            <img name="thoitiet3" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <img name="thoitiet3" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
             <p id="noidung2" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
             </center>
             <div  style="overflow:hidden;text-align: center">
@@ -111,7 +111,7 @@
       </div>
       <div class="card">
         <img
-          src="../binhthuongmoi.jpg"
+          src="./binhthuongmoi.jpg"
           alt=""
           class="card-image"
         />
@@ -119,7 +119,7 @@
           <div class="card-top">
             <h2 class="card-title">Trạm giám sát số: 03</h2>
             <center>
-            <img name="thoitiet4" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <img name="thoitiet4" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
             <p id="noidung4" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
             </center>
             <div  style="overflow:hidden;text-align: center">
@@ -151,7 +151,7 @@
       </div>
       <div class="card">
         <img
-          src="../binhthuongmoi.jpg"
+          src="./binhthuongmoi.jpg"
           alt=""
           class="card-image"
         />
@@ -159,7 +159,7 @@
           <div class="card-top">
             <h2 class="card-title">Trạm giám sát số: 04</h2>
             <center>
-            <img name="thoitiet5" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <img name="thoitiet5" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
             <p id="noidung6" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
             </center>
             <div  style="overflow:hidden;text-align: center">
@@ -233,13 +233,13 @@
     console.log("loa: "+snap.val());
     if(snap.val()==1){
              
-      document.images['anh1'].src ='../binhthuongmoi.jpg' ;
+      document.images['anh1'].src ='./binhthuongmoi.jpg' ;
 
              
          }
          if(snap.val()==0){
              
-             document.images['anh1'].src ='../tatam.jpg' ;
+             document.images['anh1'].src ='./tatam.jpg' ;
         }
       });
         dulieu.ref().update({
@@ -251,7 +251,7 @@
          }
          if(snap.val()==1){
           
-          document.images['anh1'].src ='../canhbao.jpg' ;
+          document.images['anh1'].src ='./canhbao.jpg' ;
           dulieu.ref().update({
               "nutnhan":0
             
@@ -266,13 +266,13 @@
     document.getElementById("vtTemp").innerHTML = snap.val();
     if(snap.val()<20){
              
-             document.images['thoitiet2'].src ='../toi.png' ;
+             document.images['thoitiet2'].src ='./toi.png' ;
              document.getElementById("noidung").innerHTML = "Trời Tối";
              
          }
          if(snap.val()>20 && snap.val()<500 ){
           
-          document.images['thoitiet2'].src ='../khongnang.png' ;
+          document.images['thoitiet2'].src ='./khongnang.png' ;
           document.getElementById("noidung").innerHTML = "Thời tiết: Không có nắng";
          
     
@@ -280,13 +280,13 @@
       if(snap.val()>500 && snap.val()<730){
 
            
-          document.images['thoitiet2'].src ='../nangit.png' ;
+          document.images['thoitiet2'].src ='./nangit.png' ;
          document.getElementById("noidung").innerHTML = "Thời tiết: Ít nắng";
     
       }   
       if(snap.val()>730){
           
-          document.images['thoitiet2'].src ='../nang.png' ;
+          document.images['thoitiet2'].src ='./nang.png' ;
           document.getElementById("noidung").innerHTML = "Thời tiết: Nắng tốt";
          
     
@@ -334,13 +334,13 @@
     console.log("nut nhan: "+snap.val());
     if(snap.val()==1){
              
-      document.images['anh1'].src ='../binhthuongmoi.jpg' ;
+      document.images['anh1'].src ='./binhthuongmoi.jpg' ;
 
              
          }
          if(snap.val()==0){
              
-             document.images['anh1'].src ='../canhbao.jpg' ;
+             document.images['anh1'].src ='./canhbao.jpg' ;
         }
       });
 
