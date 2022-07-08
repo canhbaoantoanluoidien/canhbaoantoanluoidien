@@ -1,120 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB CẢNH BÁO AN TOÀN</title>
-    
-
-</head>
-<body style="background-color: #660d33;font-family: arial;">
-   
-<div>
-
-    <h1 style="color: white;text-align: center;">HỆ THỐNG GIÁM SÁT KHOẢNG CÁCH AN TOÀN TRÊN ĐƯỜNG DÂY TRUYỀN TẢI ĐIỆN</h1>
-   
-    <hr width="50%" size="3" color="white"/>
-<div style="overflow:hidden">
-    <div style="width: 33.3%;pad: 2px;text-align: center;padding: 10px;float: left;  box-sizing: border-box;">
-        
-        <div  style="background-color:#020202;padding: 10px;border-radius: 10px; ">
-         <img name="anh1" src="https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg" alt="bình thường" width="100%" style="border-radius: 10px;">
-         <p style="font-size: 20PX; font-weight:bold; color: yellow;">TRẠM 01
-           
-        </br>
-        <img name="thoitiet2" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canhbaoantoanluoidien</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+ <h1 style="color: black;text-align: center;">HỆ THỐNG GIÁM SÁT KHOẢNG CÁCH AN TOÀN TRÊN ĐƯỜNG DÂY TRUYỀN TẢI ĐIỆN</h1>
+  </br>
+    <div class="cards">
+      <div class="card">
+        <img
+         name="anh1" 
+          src="../binhthuongmoi.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 01</h2>
+            <center>
+            <img name="thoitiet2" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut2" id="laseron">ON</button>
+                  <button class="nut2" id="laseroff"> OFF</button>
+              </div>
+              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut1" id="loaon">ON</button>
+                  <button class="nut1" id="loaoff"> OFF</button>
+              </div>
+          </div>
       
-        </p>
-        <p id="noidung" style="font-size: 20PX; font-weight:bold; color: white;"> thời tiết</p>
-         <button>
-            <div>
-                <div id="vtTemp" style="font-size: 0px; font-weight:bold; color: white;" >
-
-                </div>
-         <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; font-weight:bold; color: black;text-decoration: none;">Vị trí</a>
-        </button>
-     
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
         </div>
-           </div>
-           <div style="width: 33.3%;pad: 2px;text-align: center;padding: 10px;float: left;  box-sizing: border-box;">
-        
-            <div  style="background-color: #020202;padding: 10px;border-radius: 10px;">
-             <img src="https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg" alt="bình thường" width="100%" style="border-radius: 10px;">
-             <p style="font-size: 20PX; font-weight:bold; color: yellow;">TRẠM 02 </br>
-           
-            </p>
-       
-             
-             <button>
-             <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; font-weight:bold; color: black;text-decoration: none;">Vị trí</a>
-            </button>
-            </div>
-               </div>
-               <div style="width: 33.3%;pad: 2px;text-align: center;padding: 10px;float: left;  box-sizing: border-box;">
-        
-                <div  style="background-color: #020202;padding: 10px;border-radius: 10px;">
-                 <img src="https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg" alt="bình thường" width="100%" style="border-radius: 10px;">
-                 <p style="font-size: 20PX; font-weight:bold; color: yellow;">TRẠM 03 </p>
-                 
-                 <button>
-                 <a href="https://maps.app.goo.gl/tQ9Zo8mGLxo4JLcp6" style="font-size: 20PX; font-weight:bold; color: black;text-decoration: none;">Vị trí</a>
-                </button>
-                </div>
-                   </div>
-             </div>
-            
-            </div> 
-
-            <div style="overflow:hidden">
-                <div style="width: 33.3%;pad: 2px;text-align: center;padding: 10px;float: left;  box-sizing: border-box;">
-                    
-                    <div  style="background-color:#020202;padding: 10px;border-radius: 10px; ">
-                     <img name="anh1" src="https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg" alt="bình thường" width="100%" style="border-radius: 10px;">
-                     <p style="font-size: 20PX; font-weight:bold; color: yellow;">TRẠM 04 
-                    </p>
-                     
-                     <button>
-                       
-                     <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; font-weight:bold; color: black;text-decoration: none;">Vị trí</a>
-                    </button>
-                    </div>
-                       </div>
-                       <div style="width: 33.3%;pad: 2px;text-align: center;padding: 10px;float: left;  box-sizing: border-box;">
-                    
-                        <div  style="background-color: #020202;padding: 10px;border-radius: 10px;">
-                         <img src="https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg" alt="bình thường" width="100%" style="border-radius: 10px;">
-                         <p style="font-size: 20PX; font-weight:bold; color: yellow;">TRẠM 05 </br>
-                       
-                        </p>
-                   
-                         
-                         <button>
-                         <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; font-weight:bold; color: black;text-decoration: none;">Vị trí</a>
-                        </button>
-                        </div>
-                           </div>
-                           <div style="width: 33.3%;pad: 2px;text-align: center;padding: 10px;float: left;  box-sizing: border-box;">
-                    
-                            <div  style="background-color: #020202;padding: 10px;border-radius: 10px;">
-                             <img src="https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg" alt="bình thường" width="100%" style="border-radius: 10px;">
-                             <p style="font-size: 20PX; font-weight:bold; color: yellow;">TRẠM 06 </p>
-                             
-                             <button>
-                             <a href="https://maps.app.goo.gl/tQ9Zo8mGLxo4JLcp6" style="font-size: 20PX; font-weight:bold; color: black;text-decoration: none;">Vị trí</a>
-                            </button>
-                            </div>
-                               </div>
-                         </div>
-                        
-                        </div> 
-
-<span id="data"></span>
+      </div>
+      <div class="card">
+        <img
+          src="../binhthuongmoi.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 02</h2>
+            <center>
+            <img name="thoitiet3" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung2" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut22" id="laseron">ON</button>
+                  <button class="nut22" id="laseroff"> OFF</button>
+              </div>
+              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut11" id="laseron">ON</button>
+                  <button class="nut11" id="laseroff"> OFF</button>
+              </div>
+          </div>
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp2" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="../binhthuongmoi.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 03</h2>
+            <center>
+            <img name="thoitiet4" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung4" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut222" id="laseron">ON</button>
+                  <button class="nut222" id="laseroff"> OFF</button>
+              </div>
+              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut111" id="laseron">ON</button>
+                  <button class="nut111" id="laseroff"> OFF</button>
+              </div>
+          </div>
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp3" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="../binhthuongmoi.jpg"
+          alt=""
+          class="card-image"
+        />
+        <div class="card-content">
+          <div class="card-top">
+            <h2 class="card-title">Trạm giám sát số: 04</h2>
+            <center>
+            <img name="thoitiet5" src="../nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
+            <p id="noidung6" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
+            </center>
+            <div  style="overflow:hidden;text-align: center">
+              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
+                  <button class="nut22222" id="laseron">ON</button>
+                  <button class="nut22222" id="laseroff"> OFF</button>
+              </div>
+              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
+                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
+                  <button class="nut11111" id="laseron">ON</button>
+                  <button class="nut11111" id="laseroff"> OFF</button>
+              </div>
+          </div>
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+              <div >
+                  <div id="vtTemp6" style="font-size: 0px;  color: white;" >
+  
+                  </div>
+           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+          </button>
+      
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="data"></span>
 <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
-
 
 <script type="module">
    
@@ -140,20 +220,42 @@
     dbRef.on('value', snap =>{
     if(snap.val()==0){
              
-             document.images['anh1'].src ='https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg' ;
+            //  document.images['anh1'].src ='../binhthuongmoi.jpg' ;
              //var result = confirm("Cảnh báo vi phạm trạm 1");
-             var result = confirm("Trạm 1: Cảnh báo");
-        if (result == true) {
-            alert( new Date());
-        } else {
-            alert( new Date());
+        //      var result = confirm("Trạm 1: Cảnh báo");
+        // if (result == true) {
+        //     alert( new Date());
+        // } else {
+        //     alert( new Date());
+        // }
+        var valueTemp = firebase.database().ref().child('loa');
+   valueTemp.on('value',snap =>{
+    console.log("loa: "+snap.val());
+    if(snap.val()==1){
+             
+      document.images['anh1'].src ='../binhthuongmoi.jpg' ;
+
+             
+         }
+         if(snap.val()==0){
+             
+             document.images['anh1'].src ='../tatam.jpg' ;
         }
-     
+      });
+        dulieu.ref().update({
+              "nutnhan":1
+            
+            });
+
              
          }
          if(snap.val()==1){
           
-          document.images['anh1'].src ='https://i.pinimg.com/564x/d7/9b/f8/d79bf8dd8bd3ee6ec0374601a69433b7.jpg' ;
+          document.images['anh1'].src ='../canhbao.jpg' ;
+          dulieu.ref().update({
+              "nutnhan":0
+            
+            });
          
     
       }
@@ -164,26 +266,27 @@
     document.getElementById("vtTemp").innerHTML = snap.val();
     if(snap.val()<20){
              
-             document.images['thoitiet2'].src ='./toi.png' ;
+             document.images['thoitiet2'].src ='../toi.png' ;
              document.getElementById("noidung").innerHTML = "Trời Tối";
              
          }
          if(snap.val()>20 && snap.val()<500 ){
           
-          document.images['thoitiet2'].src ='./khongnang.png' ;
+          document.images['thoitiet2'].src ='../khongnang.png' ;
           document.getElementById("noidung").innerHTML = "Thời tiết: Không có nắng";
          
     
       }     
       if(snap.val()>500 && snap.val()<730){
-          
-          document.images['thoitiet2'].src ='./nangit.png' ;
+
+           
+          document.images['thoitiet2'].src ='../nangit.png' ;
          document.getElementById("noidung").innerHTML = "Thời tiết: Ít nắng";
     
       }   
       if(snap.val()>730){
           
-          document.images['thoitiet2'].src ='./nang.png' ;
+          document.images['thoitiet2'].src ='../nang.png' ;
           document.getElementById("noidung").innerHTML = "Thời tiết: Nắng tốt";
          
     
@@ -191,92 +294,57 @@
            
 
    });
-          
+  
+   var dulieu2=firebase.database();
+   var Laseron =document.getElementById("laseron");
+   var LaserofF = document.getElementById("laseroff");
+  Laseron.onclick =function(){
+   
+   dulieu2.ref().update({
+    "nutnhan":1
+   
+   });
+   }
+  LaserofF.onclick =function(){
+   
+   dulieu2.ref().update({
+    "nutnhan":0
+   
+   });
+   }
+   var dulieu=firebase.database();
+   var Loaon =document.getElementById("loaon");
+   var Loaoff = document.getElementById("loaoff");
+  Loaon.onclick =function(){
+   
+   dulieu.ref().update({
+    "loa":1
+   
+   });
+   }
+  Loaoff.onclick =function(){
+   
+   dulieu.ref().update({
+    "loa":0
+   
+   });
+   }
+   var valueTemp = firebase.database().ref().child('nutnhan');
+   valueTemp.on('value',snap =>{
+    console.log("nut nhan: "+snap.val());
+    if(snap.val()==1){
+             
+      document.images['anh1'].src ='../binhthuongmoi.jpg' ;
+
+             
+         }
+         if(snap.val()==0){
+             
+             document.images['anh1'].src ='../canhbao.jpg' ;
+        }
+      });
+
   </script>
-<!-- <script type="module">
-   
-    const firebaseConfig = {
-      apiKey: "AIzaSyBdBC8xhjoP4gAJt9fVskQr8XuGLWT1U40",
-      authDomain: "canh-bao-luoi-dien.firebaseapp.com",
-      databaseURL: "https://canh-bao-luoi-dien-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "canh-bao-luoi-dien",
-      storageBucket: "canh-bao-luoi-dien.appspot.com",
-      messagingSenderId: "669370337493",
-      appId: "1:669370337493:web:d6928ca16453b31b637a5c",
-      measurementId: "G-GJR7RYZCK6"
-    };
-  
-  
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-    
-    var xhttp = document.getElementById('thoitiet');
-   var dbRef2 = firebase.database().ref().child('thoitiet');
-    //data.innerText = snap.val());
-   
-    dbRef2.on('value', snap =>{
-   
-        if(snap.val()==20){
-             
-             document.images['thoitiet2'].src ='toi.png' ;
-             
-         }
-         if(snap.val()>50 and <100){
-          
-          document.images['thoitiet2'].src ='./khong nang.png' ;
-         
-    
-      }     
-      if(snap.val()>100 and <300){
-          
-          document.images['thoitiet2'].src ='./nang it.png' ;
-         
-    
-      }   
-      if(snap.val()<400){
-          
-          document.images['thoitiet2'].src ='./nang.png' ;
-         
-    
-      }     
-           
-    });
-          
-  </script> -->
-</body>
 
-<!-- <script >
- 
-    window.onload = updateA0;
-    function updateA0(){
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange= function(){
-            if(this.readyState==4 && this.status==200){
-              document.getElementById('val').style.width = (parseFloat(xhttp.responseText)/0.02).toFixed(1)+'%';
-             document.getElementById('val').innerHTML = (parseFloat(xhttp.responseText)/0.02).toFixed(1)+'%';
-             updateA0();
-            }
-          
-            if(xhttp.responseText =='1'){
-             
-                document.images['anh1'].src ='https://i.pinimg.com/564x/e8/7b/ba/e87bbaab5b71493eada1a6739766a07b.jpg' ;
-                //var result = confirm("Cảnh báo vi phạm trạm 1");
-            
   
-       
-               
-            }
-            if(xhttp.responseText =='2'){
-             
-             document.images['anh1'].src ='https://i.pinimg.com/564x/d7/9b/f8/d79bf8dd8bd3ee6ec0374601a69433b7.jpg' ;
-            
-         updateA0();
-         }
-        
-            }
-        xhttp.open('GET','/a0.html',true);
-        xhttp.send();
-    }
-  </script> -->
-
 </html>
