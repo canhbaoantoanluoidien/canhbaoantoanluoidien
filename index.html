@@ -10,10 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
+   
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -62,7 +59,7 @@
                   <div id="vtTemp" style="font-size: 0px;  color: white;" >
   
                   </div>
-           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
           </button>
       
   
@@ -102,7 +99,7 @@
                   <div id="vtTemp2" style="font-size: 0px;  color: white;" >
   
                   </div>
-           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
           </button>
       
   
@@ -142,7 +139,7 @@
                   <div id="vtTemp3" style="font-size: 0px;  color: white;" >
   
                   </div>
-           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
           </button>
       
   
@@ -182,7 +179,7 @@
                   <div id="vtTemp6" style="font-size: 0px;  color: white;" >
   
                   </div>
-           <a href="https://maps.app.goo.gl/TFRNeJPn5fyRN5pK9" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
           </button>
       
   
@@ -214,35 +211,12 @@
     firebase.analytics();
     var data = document.getElementById('data');
     var dbRef = firebase.database().ref().child('data');
-    //var xhttp = document.getElementById('thoitiet');
-   // var dbRef2 = firebase.database().ref().child('thoitiet');
-    //data.innerText = snap.val());
+    
     dbRef.on('value', snap =>{
     if(snap.val()==0){
       document.images['anh1'].src ='./binhthuongmoi.jpg'
              
-            //  document.images['anh1'].src ='../binhthuongmoi.jpg' ;
-             //var result = confirm("Cảnh báo vi phạm trạm 1");
-        //      var result = confirm("Trạm 1: Cảnh báo");
-        // if (result == true) {
-        //     alert( new Date());
-        // } else {
-        //     alert( new Date());
-  //       // }
-  //       var valueTemp = firebase.database().ref().child('loa');
-  //  valueTemp.on('value',snap =>{
-  //   console.log("loa: "+snap.val());
-  //   // if(snap.val()==1){
-             
-  //   //   document.images['anh1'].src ='./binhthuongmoi.jpg' ;
-
-             
-  //   //      }
-  //       //  if(snap.val()==0){
-             
-  //       //      document.images['anh1'].src ='./tatam.jpg' ;
-  //       // }
-  //     });
+            
        
 
              
@@ -326,17 +300,11 @@
    }
    }
    
-  // LaserofF.onclick =function(){
-   
-  //  dulieu2.ref().update({
-  //   "nutnhan":0
-   
-  //  });
-  //  }
+  
    var dulieu=firebase.database();
    var Loaon =document.getElementById("loaon");
    var y=0;
-  //  var Loaoff = document.getElementById("loaoff");
+  
   Loaon.onclick =function(){
     y++;
     console.log(y);
@@ -360,13 +328,6 @@
 
    }
    }
-  // Loaoff.onclick =function(){
-   
-  //  dulieu.ref().update({
-  //   "loa":0
-   
-  //  });
-  //  }
   
 
   </script>
