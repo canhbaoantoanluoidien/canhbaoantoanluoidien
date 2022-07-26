@@ -40,18 +40,18 @@
             <h2 class="card-title">Trạm giám sát số: 01</h2>
             <center>
             <img name="thoitiet2" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
-            <p id="noidung" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
+            <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết</p>
             </center>
             <div  style="overflow:hidden;text-align: center">
-              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+              <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
                   <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
-                  <button class="nut2" id="laseron">ON</button>
-                  <button class="nut2" id="laseroff"> OFF</button>
+                  <button class="nut2" id="laseron">ĐANG BẬT</button>
+                  <!-- <button class="nut2" id="laseroff"> OFF</button> -->
               </div>
-              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
+              <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
                   <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
-                  <button class="nut1" id="loaon">ON</button>
-                  <button class="nut1" id="loaoff"> OFF</button>
+                  <button class="nut1" id="loaon">ĐANG TẮT</button>
+                  <!-- <button class="nut1" id="loaoff"> OFF</button> -->
               </div>
           </div>
       
@@ -231,31 +231,25 @@
         var valueTemp = firebase.database().ref().child('loa');
    valueTemp.on('value',snap =>{
     console.log("loa: "+snap.val());
-    if(snap.val()==1){
+    // if(snap.val()==1){
              
-      document.images['anh1'].src ='./binhthuongmoi.jpg' ;
+    //   document.images['anh1'].src ='./binhthuongmoi.jpg' ;
 
              
-         }
-         if(snap.val()==0){
+    //      }
+        //  if(snap.val()==0){
              
-             document.images['anh1'].src ='./tatam.jpg' ;
-        }
+        //      document.images['anh1'].src ='./tatam.jpg' ;
+        // }
       });
-        dulieu.ref().update({
-              "nutnhan":1
-            
-            });
+       
 
              
          }
          if(snap.val()==1){
           
           document.images['anh1'].src ='./canhbao.jpg' ;
-          dulieu.ref().update({
-              "nutnhan":0
-            
-            });
+        
          
     
       }
@@ -291,58 +285,88 @@
          
     
       }     
+      if(snap.val()==3000){
+          
+          document.images['thoitiet2'].src ='./mua.png' ;
+          document.getElementById("noidung").innerHTML = "Thời tiết: mưa";
+         
+    
+      }     
            
 
    });
   
    var dulieu2=firebase.database();
    var Laseron =document.getElementById("laseron");
-   var LaserofF = document.getElementById("laseroff");
+  //  var LaserofF = document.getElementById("laseroff");
+   var x=0;
+
   Laseron.onclick =function(){
-   
-   dulieu2.ref().update({
-    "nutnhan":1
-   
-   });
+   x++;
+   console.log(x);
+   if(x>1){
+    x=0;
    }
-  LaserofF.onclick =function(){
-   
-   dulieu2.ref().update({
+   if(x==0){
+    document.getElementById("laseron").innerHTML = "ĐANG BẬT";
+    dulieu2.ref().update({
     "nutnhan":0
    
    });
+
    }
+   if(x==1){
+    document.getElementById("laseron").innerHTML = "ĐANG TẮT";
+    dulieu2.ref().update({
+    "nutnhan":1
+   
+   });
+
+   }
+   }
+   
+  // LaserofF.onclick =function(){
+   
+  //  dulieu2.ref().update({
+  //   "nutnhan":0
+   
+  //  });
+  //  }
    var dulieu=firebase.database();
    var Loaon =document.getElementById("loaon");
-   var Loaoff = document.getElementById("loaoff");
+   var y=0;
+  //  var Loaoff = document.getElementById("loaoff");
   Loaon.onclick =function(){
-   
-   dulieu.ref().update({
+    y++;
+    console.log(y);
+   if(y>1){
+    y=0;
+   }
+   if(y==1){
+    document.getElementById("loaon").innerHTML = "ĐANG BẬT";
+    dulieu.ref().update({
     "loa":1
    
    });
+
    }
-  Loaoff.onclick =function(){
-   
-   dulieu.ref().update({
+   if(y==0){
+    document.getElementById("loaon").innerHTML = "ĐANG TẮT";
+    dulieu.ref().update({
     "loa":0
    
    });
-   }
-   var valueTemp = firebase.database().ref().child('nutnhan');
-   valueTemp.on('value',snap =>{
-    console.log("nut nhan: "+snap.val());
-    if(snap.val()==1){
-             
-      document.images['anh1'].src ='./binhthuongmoi.jpg' ;
 
-             
-         }
-         if(snap.val()==0){
-             
-             document.images['anh1'].src ='./canhbao.jpg' ;
-        }
-      });
+   }
+   }
+  // Loaoff.onclick =function(){
+   
+  //  dulieu.ref().update({
+  //   "loa":0
+   
+  //  });
+  //  }
+  
 
   </script>
 
