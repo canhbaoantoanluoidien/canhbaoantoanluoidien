@@ -219,6 +219,7 @@
     //data.innerText = snap.val());
     dbRef.on('value', snap =>{
     if(snap.val()==0){
+      document.images['anh1'].src ='./binhthuongmoi.jpg'
              
             //  document.images['anh1'].src ='../binhthuongmoi.jpg' ;
              //var result = confirm("Cảnh báo vi phạm trạm 1");
@@ -227,21 +228,21 @@
         //     alert( new Date());
         // } else {
         //     alert( new Date());
-        // }
-        var valueTemp = firebase.database().ref().child('loa');
-   valueTemp.on('value',snap =>{
-    console.log("loa: "+snap.val());
-    // if(snap.val()==1){
+  //       // }
+  //       var valueTemp = firebase.database().ref().child('loa');
+  //  valueTemp.on('value',snap =>{
+  //   console.log("loa: "+snap.val());
+  //   // if(snap.val()==1){
              
-    //   document.images['anh1'].src ='./binhthuongmoi.jpg' ;
+  //   //   document.images['anh1'].src ='./binhthuongmoi.jpg' ;
 
              
-    //      }
-        //  if(snap.val()==0){
+  //   //      }
+  //       //  if(snap.val()==0){
              
-        //      document.images['anh1'].src ='./tatam.jpg' ;
-        // }
-      });
+  //       //      document.images['anh1'].src ='./tatam.jpg' ;
+  //       // }
+  //     });
        
 
              
