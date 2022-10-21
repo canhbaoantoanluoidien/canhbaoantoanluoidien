@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canhbaoantoanluoidien</title>
+    <title>baodongnghieng</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-   
+  
+    
+  
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -21,172 +23,353 @@
     ></script>
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
- <h1 style="color: black;text-align: center;">HỆ THỐNG GIÁM SÁT KHOẢNG CÁCH AN TOÀN TRÊN ĐƯỜNG DÂY TRUYỀN TẢI ĐIỆN</h1>
+  <body style="background-image: url('ttt.jpg');" >
+
+
+ <h1 style="color: rgb(249, 249, 253);text-align: center;;">HỆ THỐNG QUẢN LÝ PHƯƠNG TIỆN VẬN TẢI</h1>
   </br>
-    <div class="cards">
+    <div class="cards" style="background-image: url('ttt.jpg');">
       <div class="card">
         <img
          name="anh1" 
-          src="./binhthuongmoi.jpg"
+          src="./s1.png"
           alt=""
           class="card-image"
         />
+
+
+        <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 1</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT7766 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Trần Văn Minh</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 096.827.7940 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ: Trung Hưng, Cờ Đỏ, Cần Thơ </p>
         <div class="card-content">
           <div class="card-top">
-            <h2 class="card-title">Trạm giám sát số: 01</h2>
-            <center>
-            <img name="thoitiet2" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
-            <p id="noidung" style="font-size: 15PX; font-weight:bold; color: white;"> thời tiết</p>
-            </center>
-            <div  style="overflow:hidden;text-align: center">
-              <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
-                  <button class="nut2" id="laseron">ĐANG BẬT</button>
-                  <!-- <button class="nut2" id="laseroff"> OFF</button> -->
-              </div>
-              <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
-                  <button class="nut1" id="loaon">ĐANG TẮT</button>
-                  <!-- <button class="nut1" id="loaoff"> OFF</button> -->
-              </div>
+ 
+        <div id="tvTemp" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+        <div id="bgr" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+            <div id="val" style ="width:50%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+    
+        <!-- </div> -->
+        <!-- <div id="tvTemp2" style=" color:rgb(255, 255, 1); text-align: center; ">Góc nghiêng </div> -->
+        <!-- <div id="bgr2" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;"> -->
+            <!-- <div id="val2" style ="width:50%;height: 32px;background: rgb(255, 0, 4); border-radius: 20px;"></div> -->
+    
+        </div>
+        <!-- <div id="chu1" style=" color:rgb(4, 205, 250); text-align: center; ">Góc cảnh báo:  </div>
+        <div id="chu2" style=" color:rgb(4, 205, 250); text-align: center; ">Thời gian cài đặt:  </div> -->
+        <div  style="overflow:hidden;text-align: center">
+          <div style=" margin-left: 30px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
+              <p style="font-size: 20PX; font-weight:bold; color: white;">Góc</p>
+              <button class="nut2" id="laseron">chế độ</button>
+              <div id="goc1" style=" color:rgb(4, 205, 250); text-align: center; ">Góc ngiêng</div>
+              <!-- <button class="nut2" id="laseroff"> OFF</button> -->
           </div>
+          <div style=" margin-left: auto;margin-right: 1px; padding: 10px;"> 
+              <p style="font-size: 20PX; font-weight:bold; color: white;">Thời gian</p>
+              <button class="nut1" id="loaon">chế độ</button>
+              <div id="thoigian1" style=" color:rgb(4, 205, 250); text-align: center; ">Báo động sau:</div>
+              <!-- <button class="nut1" id="loaoff"> OFF</button> -->
+          </div>
+      </div>
       
           </div>
           <div class="card-bottom">
             <button class="card-live" >
-              <div >
-                  <div id="vtTemp" style="font-size: 0px;  color: white;" >
-  
-                  </div>
-           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
+    
+         <a href="https://goo.gl/maps/gHCUoM8pK27jbWXo7" style="font-size: 20PX; color: white;text-decoration: none; ">
+            <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+            
+            Vị trí</a>
           </button>
-      
-  
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./binhthuongmoi.jpg"
-          alt=""
-          class="card-image"
-        />
-        <div class="card-content">
-          <div class="card-top">
-            <h2 class="card-title">Trạm giám sát số: 02</h2>
-            <center>
-            <img name="thoitiet3" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
-            <p id="noidung2" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
-            </center>
-            <div  style="overflow:hidden;text-align: center">
-              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
-                  <button class="nut22" id="laseron">ON</button>
-                  <button class="nut22" id="laseroff"> OFF</button>
-              </div>
-              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
-                  <button class="nut11" id="laseron">ON</button>
-                  <button class="nut11" id="laseroff"> OFF</button>
-              </div>
-          </div>
-      
-          </div>
-          <div class="card-bottom">
-            <button class="card-live" >
-              <div >
-                  <div id="vtTemp2" style="font-size: 0px;  color: white;" >
-  
-                  </div>
-           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
-          </button>
-      
-  
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./binhthuongmoi.jpg"
-          alt=""
-          class="card-image"
-        />
-        <div class="card-content">
-          <div class="card-top">
-            <h2 class="card-title">Trạm giám sát số: 03</h2>
-            <center>
-            <img name="thoitiet4" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
-            <p id="noidung4" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
-            </center>
-            <div  style="overflow:hidden;text-align: center">
-              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
-                  <button class="nut222" id="laseron">ON</button>
-                  <button class="nut222" id="laseroff"> OFF</button>
-              </div>
-              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
-                  <button class="nut111" id="laseron">ON</button>
-                  <button class="nut111" id="laseroff"> OFF</button>
-              </div>
-          </div>
-      
-          </div>
-          <div class="card-bottom">
-            <button class="card-live" >
-              <div >
-                  <div id="vtTemp3" style="font-size: 0px;  color: white;" >
-  
-                  </div>
-           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
-          </button>
-      
-  
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./binhthuongmoi.jpg"
-          alt=""
-          class="card-image"
-        />
-        <div class="card-content">
-          <div class="card-top">
-            <h2 class="card-title">Trạm giám sát số: 04</h2>
-            <center>
-            <img name="thoitiet5" src="./nang.png" alt="bình thường" width="30%" style="border-radius: 10px;">
-            <p id="noidung6" style="font-size: 10PX; font-weight:bold; color: white;"> thời tiết</p>
-            </center>
-            <div  style="overflow:hidden;text-align: center">
-              <div style=" margin-left: 50px;margin-right: auto;padding: 10px;float: left;  box-sizing: border-box;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Laser</p>
-                  <button class="nut22222" id="laseron">ON</button>
-                  <button class="nut22222" id="laseroff"> OFF</button>
-              </div>
-              <div style=" margin-left: auto;margin-right: 50px; padding: 10px;"> 
-                  <p style="font-size: 20PX; font-weight:bold; color: white;">Loa</p>
-                  <button class="nut11111" id="laseron">ON</button>
-                  <button class="nut11111" id="laseroff"> OFF</button>
-              </div>
-          </div>
-      
-          </div>
-          <div class="card-bottom">
-            <button class="card-live" >
-              <div >
-                  <div id="vtTemp6" style="font-size: 0px;  color: white;" >
-  
-                  </div>
-           <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none;">Vị trí</a>
-          </button>
-      
-  
-          </div>
-        </div>
-      </div>
     </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+         name="anh1" 
+          src="./s3.jpg"
+          alt=""
+          class="card-image"
+        />
+
+
+        <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 2</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT3437 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Nguyễn Thanh Sơn</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 013.647.2330 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ: Cần Thơ </p>
+        <div class="card-content">
+          <div class="card-top">
+ 
+        <div id="tvTemp2" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+        <div id="bgr2" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+            <div id="val2" style ="width:50%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+    
+        </div>
+     
+           
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+    
+         <a href="https://goo.gl/maps/UwzfBsx6sDABj3dP8" style="font-size: 20PX; color: white;text-decoration: none; ">
+            <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+            
+            Vị trí</a>
+          </button>
+    </div>
+        </div>
+      </div>
+    
+
+      <div class="card">
+        <img
+         name="anh1" 
+          src="./s4.jpg"
+          alt=""
+          class="card-image"
+        />
+
+
+        <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 3</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT4589 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Trần Minh Toàn</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 093.757.4412 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ: An Giang </p>
+        <div class="card-content">
+          <div class="card-top">
+ 
+        <div id="tvTemp3" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+        <div id="bgr3" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+            <div id="val3" style ="width:20%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+    
+        </div>
+     
+           
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+    
+         <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none; ">
+            <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+            
+            Vị trí</a>
+          </button>
+    </div>
+        </div>
+      </div>
+    
+
+      <div class="card">
+        <img
+         name="anh1" 
+          src="./s5.jpg"
+          alt=""
+          class="card-image"
+        />
+
+
+        <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 4</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT3597 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Chương Đăng Khoa</p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 094.345.7345 </p>
+        <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ: Sóc Trăng </p>
+        <div class="card-content">
+          <div class="card-top">
+ 
+        <div id="tvTemp4" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+        <div id="bgr4" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+            <div id="val4" style ="width:60%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+    
+        </div>
+     
+           
+      
+          </div>
+          <div class="card-bottom">
+            <button class="card-live" >
+    
+         <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none; ">
+            <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+            
+            Vị trí</a>
+          </button>
+    </div>
+        </div>
+      </div>
+    
+    
+        </div>
+       
+     
+
+
+        <div class="cards" style="background-image: url('ttt.jpg');">
+          <div class="card">
+            <img
+             name="anh1" 
+              src="./s2.jpg"
+              alt=""
+              class="card-image"
+            />
+    
+    
+            <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 5</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT3459 </p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Mai Vĩnh Phúc</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 054.667.8905 </p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ:  Cần Thơ </p>
+            <div class="card-content">
+              <div class="card-top">
+     
+            <div id="tvTemp5" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+            <div id="bgr5" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+                <div id="val5" style ="width:80%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+        
+            </div>
+         
+               
+          
+              </div>
+              <div class="card-bottom">
+                <button class="card-live" >
+        
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none; ">
+                <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+                
+                Vị trí</a>
+              </button>
+        </div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <img
+             name="anh1" 
+              src="./s6.jpg"
+              alt=""
+              class="card-image"
+            />
+    
+    
+            <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 6</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT5498 </p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Trần Phú Nam</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 093.333.2123</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ: Cà Mau </p>
+            <div class="card-content">
+              <div class="card-top">
+     
+            <div id="tvTemp6" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+            <div id="bgr6" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+                <div id="val6" style ="width:60%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+        
+            </div>
+         
+               
+          
+              </div>
+              <div class="card-bottom">
+                <button class="card-live" >
+        
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none; ">
+                <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+                
+                Vị trí</a>
+              </button>
+        </div>
+            </div>
+          </div>
+        
+    
+          <div class="card">
+            <img
+             name="anh1" 
+              src="./s7.jpg"
+              alt=""
+              class="card-image"
+            />
+    
+    
+            <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 7</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT3328 </p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Trần Nam Trung</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 094.566.7565 </p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ: Cần Thơ </p>
+            <div class="card-content">
+              <div class="card-top">
+     
+            <div id="tvTemp7" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+            <div id="bgr7" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+                <div id="val7" style ="width:40%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+        
+            </div>
+         
+               
+          
+              </div>
+              <div class="card-bottom">
+                <button class="card-live" >
+        
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none; ">
+                <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+                
+                Vị trí</a>
+              </button>
+        </div>
+            </div>
+          </div>
+        
+    
+          <div class="card">
+            <img
+             name="anh1" 
+              src="./s8.jpg"
+              alt=""
+              class="card-image"
+            />
+    
+    
+            <p style="font-size: 20px; text-align: center; color: rgb(239, 251, 6);">Phương tiện vận tải số 8</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Biển số: CT4584 </p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Thuyền trưởng: Nguyễn Thành Trung</p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">SĐT: 034.456.6754 </p>
+            <p style="font-size: 15px;  color: azure; margin-left: 10px;">Địa chỉ: Cần Thơ </p>
+            <div class="card-content">
+              <div class="card-top">
+     
+            <div id="tvTemp8" style=" color:rgb(4, 205, 250); text-align: center; ">Nhiên liệu: </div>
+            <div id="bgr8" style="width: 100%;height: 32px;background: rgb(248, 246, 246); border-radius: 20px;">
+                <div id="val8" style ="width:10%;height: 32px;background: rgb(0, 238, 255); border-radius: 20px;"></div>
+        
+            </div>
+         
+               
+          
+              </div>
+              <div class="card-bottom">
+                <button class="card-live" >
+        
+             <a href="https://www.google.com/maps/place/Tr%E1%BA%A1m+s%E1%BB%91+01/@10.0992823,105.716994,19.44z/data=!4m12!1m6!3m5!1s0x31a087a278a86855:0xdc03a97e404a6adf!2zVHLhuqFtIHPhu5EgMDE!8m2!3d10.0993355!4d105.7169119!3m4!1s0x31a087a278a86855:0xdc03a97e404a6adf!8m2!3d10.0993355!4d105.7169119?hl=vi" style="font-size: 20PX; color: white;text-decoration: none; ">
+                <img src="map.png" alt="Vị trí"style="width:42px;height:42px;border:0;">
+                
+                Vị trí</a>
+              </button>
+        </div>
+            </div>
+          </div>
+        
+        
+            </div>
+           
+         
+      
+     </body>
+   
     <span id="data"></span>
 <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
@@ -209,96 +392,137 @@
   
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-    var data = document.getElementById('data');
-    var dbRef = firebase.database().ref().child('data');
     
-    dbRef.on('value', snap =>{
-    if(snap.val()==0){
-      document.images['anh1'].src ='./binhthuongmoi.jpg'
-             
-            
-       
 
-             
-         }
-         if(snap.val()==1){
-          
-          document.images['anh1'].src ='./canhbao.jpg' ;
-        
-         
-    
-      }
-    });
-   var valueTemp = firebase.database().ref().child('thoitiet');
-   valueTemp.on('value',snap =>{
-    console.log("thoi tiet: "+snap.val());
-    document.getElementById("vtTemp").innerHTML = snap.val();
-    if(snap.val()<20){
-             
-             document.images['thoitiet2'].src ='./toi.png' ;
-             document.getElementById("noidung").innerHTML = "Trời Tối";
-             
-         }
-         if(snap.val()>20 && snap.val()<500 ){
-          
-          document.images['thoitiet2'].src ='./khongnang.png' ;
-          document.getElementById("noidung").innerHTML = "Thời tiết: Không có nắng";
-         
-    
-      }     
-      if(snap.val()>500 && snap.val()<730){
+var valueTemp = firebase.database().ref().child('thoitiet');
+valueTemp.on('value',snap =>{
+  var ml=100;
+  var cm= snap.val()*3;
+  var lit = ml-cm;
 
-           
-          document.images['thoitiet2'].src ='./nangit.png' ;
-         document.getElementById("noidung").innerHTML = "Thời tiết: Ít nắng";
-    
-      }   
-      if(snap.val()>730){
-          
-          document.images['thoitiet2'].src ='./nang.png' ;
-          document.getElementById("noidung").innerHTML = "Thời tiết: Nắng tốt";
-         
-    
-      }     
-      if(snap.val()==3000){
-          
-          document.images['thoitiet2'].src ='./mua.png' ;
-          document.getElementById("noidung").innerHTML = "Thời tiết: mưa";
-         
-    
-      }     
-           
+document.getElementById("tvTemp").innerHTML="Nhiên liệu hiện tại: "+ lit +" Lít";
+document.getElementById('val').style.width = lit.toFixed(1)+'%';
+});
 
-   });
+// var valueTemp2 = firebase.database().ref().child('nghien1');
+// valueTemp2.on('value',snap =>{
+// document.getElementById("tvTemp2").innerHTML="Góc nghiêng: "+ snap.val() +" °";
+// document.getElementById('val2').style.width = snap.val().toFixed(1)+'%';
+// });
+var valueTemp3 = firebase.database().ref().child('thoigian');
+valueTemp3.on('value',snap =>{
+document.getElementById("chu2").innerHTML="Thời gian: "+ snap.val()/1000 + " giây";
+
+});
+var valueTemp4 = firebase.database().ref().child('goc');
+valueTemp4.on('value',snap =>{
+document.getElementById("chu1").innerHTML="Chế độ góc: "+ snap.val() ;
+
+});
+
+// var dulieu2=firebase.database();
+//    var Laseron =document.getElementById("laseron");
+//   //  var LaserofF = document.getElementById("laseroff");
+//    var x=0;
+
+//   Laseron.onclick =function(){
   
-   var dulieu2=firebase.database();
+//     dulieu2.ref().update({
+//     "goc":1
+   
+//    });
+   
+//     var valueTemp6 = firebase.database().ref().child('nutnhan');
+//    valueTemp6.on('value',snap =>{
+//     console.log("nutnhan: "+snap.val());
+//     //document.getElementById("vtTemp").innerHTML = snap.val();
+//     if(snap.val()==0){
+             
+//       document.getElementById("laseron").innerHTML = "Góc nhỏ"; 
+             
+//          }
+//          if(snap.val()==1){
+             
+//              document.getElementById("laseron").innerHTML = "Góc lớn"; 
+                    
+//                 }
+         
+           
+
+//    });
+
+//   //  }
+//   //  if(x==1){
+//   //   document.getElementById("laseron").innerHTML = "Góc lớn";
+//   //   dulieu2.ref().update({
+//   //   "goc":1
+   
+//   //  });
+
+//    // }
+//    }
+
+var valueTemp = firebase.database().ref().child('nutnhan');
+valueTemp.on('value',snap =>{
+  if(snap.val()==0){
+        
+document.getElementById("goc1").innerHTML="Góc >20độ";
+  }
+  if(snap.val()==1){
+        
+        document.getElementById("goc1").innerHTML="Góc >30 độ";
+          }
+
+});
+
+var valueTemp = firebase.database().ref().child('nghien1');
+valueTemp.on('value',snap =>{
+  if(snap.val()==0){
+        
+document.getElementById("thoigian1").innerHTML="Báo động sau: 10s";
+  }
+  if(snap.val()==1){
+        
+        document.getElementById("thoigian1").innerHTML="Báo động sau: 5s";
+          }
+
+});
+
+
+var dulieu2=firebase.database();
    var Laseron =document.getElementById("laseron");
   //  var LaserofF = document.getElementById("laseroff");
    var x=0;
 
   Laseron.onclick =function(){
    x++;
+   dulieu2.ref().update({
+    "goc":1
+   
+  });
+ 
    console.log(x);
    if(x>1){
     x=0;
    }
    if(x==0){
-    document.getElementById("laseron").innerHTML = "ĐANG BẬT";
+    document.getElementById("laseron").innerHTML = "Chế độ:2";
     dulieu2.ref().update({
-    "nutnhan":0
+   
    
    });
 
    }
    if(x==1){
-    document.getElementById("laseron").innerHTML = "ĐANG TẮT";
+    document.getElementById("laseron").innerHTML = "Chế độ:1";
     dulieu2.ref().update({
-    "nutnhan":1
+   
    
    });
 
    }
    }
+   
    
   
    var dulieu=firebase.database();
@@ -307,30 +531,23 @@
   
   Loaon.onclick =function(){
     y++;
+    dulieu.ref().update({
+    "set":1
+   
+   });
+
     console.log(y);
    if(y>1){
     y=0;
    }
    if(y==1){
-    document.getElementById("loaon").innerHTML = "ĐANG BẬT";
-    dulieu.ref().update({
-    "loa":1
-   
-   });
-
+    document.getElementById("loaon").innerHTML = "Chế độ:1";
+    
    }
    if(y==0){
-    document.getElementById("loaon").innerHTML = "ĐANG TẮT";
-    dulieu.ref().update({
-    "loa":0
-   
-   });
-
-   }
-   }
-  
-
+    document.getElementById("loaon").innerHTML = "Chế độ:2";
+    }
+   }  
   </script>
 
-  
 </html>
